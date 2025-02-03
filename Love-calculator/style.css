@@ -1,0 +1,179 @@
+/* body{
+    background-color: #eb8fc3;
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container{
+    width: 500px;
+    margin: 500px;
+    background-color: #f3c4d7;
+    padding: 50px;
+    border-radius:10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: 3px solid #f656a3;
+    text-align: center;
+    overflow: auto;
+}
+h2{
+    color:#f14e9d;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.love-caluculator{
+    margin-top: 20px;
+
+}
+label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:#f14e9d;
+}
+input[type="text"]{
+    width: 95%;
+    padding: 10px;
+    margin-top: 10px;
+    color:#f14e9d;
+}
+button{
+    background-color: #da4d91;
+    color:#fff;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#result{
+    margin-top: 10px;
+    font-size: 22px;
+    color:#f14e9d;
+} */
+
+/* General Reset and Styling */
+body {
+    background: linear-gradient(to bottom, #fc5fbb, #fad0c4);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures no scrollbar */
+    overflow: hidden;
+}
+
+/* Centered container for the calculator */
+.container {
+    width: 500px;
+    background: linear-gradient(135deg, #f4a3c4, #ffcfe0);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ff6fa8;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading styling */
+h2 {
+    color: #ff4a88;
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-shadow: 1px 1px 2px rgba(255, 74, 136, 0.7);
+}
+
+/* Form styling */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #ff4a88;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #ff6fa8;
+    border-radius: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    color: #ff4a88;
+    background: #ffe6f0;
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #ff4a88;
+    box-shadow: 0 0 8px rgba(255, 74, 136, 0.5);
+}
+
+/* Button styling */
+button {
+    background-color: #ff4a88;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #e93e77;
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Result section */
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ff4a88;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-shadow: 1px 1px 3px rgba(255, 74, 136, 0.8);
+}
+
+/* Love calculator section */
+.love-calculator {
+    margin-top: 20px;
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.container {
+    animation: fadeIn 0.6s ease-out;
+}
